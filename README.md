@@ -48,19 +48,19 @@ This project serves two primary purposes:
 
 ## 📂 Project Structure (Early Stage)
 
-outdoor-platform/
-│
-├── src/
-│ └── app/
-│ ├── page.tsx
-│ └── admin/
-│ └── page.tsx
-│
-├── prisma/
-│ └── schema.prisma
-│
-├── package.json
-└── README.md
+- outdoor-platform/
+- │
+- ├── src/
+- │ └── app/
+- │ ├── page.tsx
+- │ └── admin/
+- │ └── page.tsx
+- │
+- ├── prisma/
+- │ └── schema.prisma
+- │
+- ├── package.json
+- └── README.md
 
 
 ---
