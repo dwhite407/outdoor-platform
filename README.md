@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Outdoor Platform
 
-## Getting Started
+Multi-tenant SaaS storefront platform for outdoor and fishing equipment businesses.
 
-First, run the development server:
+This application allows outdoor equipment companies to subscribe and manage their own storefronts, upload products, and connect with customers within a centralized marketplace platform.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Project Goals
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project serves two primary purposes:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Real Business Application
+- Built to support a family-operated outdoor equipment business  
+- Designed to scale into a subscription-based B2B storefront platform  
 
-## Learn More
+### 2. Technical Skill Development
+- Preparation for a software engineering internship  
+- Focus on TypeScript, Python, AWS (Lambda, S3), and production deployment practices  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🏗️ Tech Stack (Current & Planned)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Frontend
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
 
-## Deploy on Vercel
+### Backend
+- Next.js API routes
+- Prisma ORM
+- PostgreSQL (local → AWS RDS planned)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Cloud / DevOps (Planned)
+- AWS S3 (product image storage)
+- AWS Lambda (image processing & background jobs)
+- AWS SES (email notifications)
+- CloudWatch (logging)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Tooling
+- VS Code
+- ESLint
+- Prettier
+- Git
+
+---
+
+## 📂 Project Structure (Early Stage)
+
+outdoor-platform/
+│
+├── src/
+│ └── app/
+│ ├── page.tsx
+│ └── admin/
+│ └── page.tsx
+│
+├── prisma/
+│ └── schema.prisma
+│
+├── package.json
+└── README.md
+
+
+---
+
+## 🧠 Architecture Vision
+
+This application is being built as a **multi-tenant SaaS platform**, meaning:
+
+- Multiple businesses can subscribe  
+- Each business manages its own storefront  
+- Role-based access control:
+  - Platform Admin
+  - Business Admin
+  - Public Users  
+- Products are isolated per business  
+- Subscription gating controls storefront visibility  
+
+---
+
+## 🛠️ Current Status
+
+- ✅ Next.js project initialized  
+- ✅ TypeScript configured  
+- ✅ Admin route created  
+- 🔄 Prisma database schema in development  
+- 🔄 Local PostgreSQL setup pending  
+- 🔜 AWS integration planned  
+
+---
+
+## 🔮 Future Roadmap
+
+- [ ] Multi-tenant database schema
+- [ ] Authentication + role-based access
+- [ ] Product CRUD system
+- [ ] Image uploads (AWS S3)
+- [ ] Lambda image processing pipeline
+- [ ] Subscription management
+- [ ] Deployment to production
+- [ ] CI/CD pipeline
+
+---
+
+## 📌 Why This Project Matters
+
+This project is intentionally structured to simulate real-world SaaS development, including:
+
+- Cloud integration  
+- Multi-tenant data modeling  
+- Role-based security  
+- Infrastructure planning  
+- Scalable backend architecture  
+
+It is being developed with long-term maintainability and production deployment in mind.
+
+---
+
+## 👤 Author
+
+Drew White  
+Computer Science Student  
+Focused on full-stack and cloud development  
+
+---
+
+## 📄 License
+
+Private project – all rights reserved.
